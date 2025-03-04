@@ -40,7 +40,7 @@ void main() {
       "Niederschlagsmenge: $avgRain " +
       "Windgeschwindigkeit: $avgWind");
 
-  double? avgRain4 = ((rains[0] ?? 0), (rains[1] ?? 0), (rains[2] ?? 0)) / 3;
+  // double? avgRain4 = ((rains[0] ?? 0), (rains[1] ?? 0), (rains[2] ?? 0)) / 3;
 }
 
 // double? avgRain = (((rains[0] ?? 0), (rains[1] ?? 0), (rains[2] ?? 0)) / 3);
