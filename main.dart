@@ -40,7 +40,19 @@ void main() {
       "Niederschlagsmenge: $avgRain " +
       "Windgeschwindigkeit: $avgWind");
 
-  double? avgRain4 = ((rains[0] ?? 0) + (rains[1] ?? 0) + (rains[2] ?? 0)) / 3;
-}
+  double avgRain4 = ((rains[0] ?? 0) + (rains[1] ?? 0) + (rains[2] ?? 0)) / 3;
+  print(avgRain4);
 
-// double? avgRain = (((rains[0] ?? 0), (rains[1] ?? 0), (rains[2] ?? 0)) / 3);
+// Bonusaufgabe
+
+  List<Map<String, double?>> weatherData1 = [
+    {"temp": 5.3, "rain": 0.9, "wind": null},
+    {"temp>": 4.5, "rain": null, "wind": 16.8},
+    {"temp": null, "rain": 3.8, "wind": null},
+  ];
+
+  double? x = (weatherData[2]["temp"]) ?? (weatherData[1]["wind"]);
+  print(x);
+
+  // double? x = (weatherData[2]["temp"]) ?? (weatherData[1]["wind"]);
+}
